@@ -109,9 +109,47 @@
 
         .text-1 p,
         .text-2 p {
-            font-size: 14px;
+            font-size: 12px;
             line-height: 20px;
             text-align: center;
         }
     }
+
+@media (max-width: 768px) {
+
+  .anouncement {
+    overflow: hidden;
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+  }
+
+ 
+  .container {
+    display: inline-flex;
+    gap: 60px;
+    width: max-content;         
+    min-width: 300%;            
+    animation: slideMobile 15s linear infinite;
+  }
+
+  .text-1 p,
+  .text-2 p {
+    white-space: nowrap;
+    font-size: 14px;
+  }
+
+  
+  @keyframes slideMobile {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);  
+    }
+  }
+}
+
+
+
 </style>
