@@ -328,10 +328,9 @@
 
     @media (max-width: 1024px) {
 
-        /* NAV-WRAPPER FIX */
         .nav-wrapper {
             display: flex !important;
-            gap: 10px;
+            gap: 8px;
             padding: 8px 12px;
         }
 
@@ -348,6 +347,7 @@
             display: flex;
             gap: 18px;
             align-items: center;
+            margin: auto;
         }
 
 
@@ -373,6 +373,7 @@
         .search-bar {
             width: 55%;
             top: 12px;
+            margin: auto;
         }
 
 
@@ -412,7 +413,7 @@
             display: flex;
             gap: 25px;
             justify-content: center;
-            margin-top: 25px;
+            margin-top: 13px;
         }
 
         .mobile-icons img {
@@ -424,7 +425,7 @@
             display: block;
             position: absolute;
             right: 7px;
-            top: 80px;
+           top: 76px;
             cursor: pointer;
         }
 
@@ -433,23 +434,6 @@
             display: none;
         }
 
-        /* .nav-wrapper {
-            display: none;
-            position: absolute;
-            top: 147px;
-            left: 0;
-            width: 100%;
-            height: auto;
-            background: #cabebe;
-            flex-direction: column;
-            padding: 20px;
-        }
-
-        .nav-wrapper ul {
-            flex-direction: column;
-            gap: 20px;
-            width: 100%;
-        } */
 
         .nav-wrapper {
             display: flex;
@@ -515,7 +499,7 @@
             width: 100%;
             max-width: 50%;
             /* max-width: 202px; */
-            margin-top: 20px;
+            /* margin-top: 20px; */
             justify-content: center;
             margin-left: 37px;
         }
@@ -525,6 +509,36 @@
             padding-left: 24px;
             margin: 0;
         }
+    }
+
+    @media (max-width: 480px) {
+        .search-bar input {
+            width: 100%;
+            /* padding: 10px 10px 10px 53px; */
+            border: 1px solid #ccc;
+            letter-spacing: 0px;
+            border-radius: 25px;
+            background-color: #E6E6E6;
+            font-size: 1.3rem;
+            padding-left: 39px;
+        }
+
+        .search-bar {
+            width: 64%;
+            position: relative;
+            top: -10px;
+            right: 29px;
+        }
+
+        .search-bar .search-icon {
+            position: absolute;
+            left: 14px;
+            top: 13%;
+            /* transform: translateY(-50%); */
+            width: 18px;
+
+        }
+
     }
 </style>
 <script>
