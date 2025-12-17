@@ -1,0 +1,85 @@
+
+kaid
+document.addEventListener('DOMContentLoaded', () => {
+
+  const addToCartBtn = document.querySelector('button[name="add"]');
+  if (!addToCartBtn) return;
+
+  addToCartBtn.addEventListener('click', function (e) {
+
+    // Find checked add-on checkboxes
+    const checkedAddons = document.querySelectorAll('.addon-checkbox:checked');
+
+    // If no add-ons selected → let Shopify default add-to-cart work
+    if (checkedAddons.length === 0) {
+      return;
+    }
+
+    // Add-ons selected → custom add-to-cart
+    e.preventDefault();
+
+    const items = [];
+
+    // Main product variant
+    const mainVariantInput = document.querySelector('input[name="id"]');
+    if (!mainVariantInput) return;
+
+    items.push({
+      id: mainVariantInput.value,
+      quantity: 1
+    });
+
+    // Add-on products
+    checkedAddons.forEach(checkbox => {
+      const addonCard = checkbox.closest('.addon-card');
+      if (!addonCard) return;
+
+      let variantId = checkbox.dataset.defaultVariant;
+      if (!variantId) return;
+
+      // If variant selector exists, use selected variant
+      const variantSelect = addonCard.querySelector('.addon-variant');
+      if (variantSelect) {
+        variantId = variantSelect.value;
+      }
+
+      const qtyInput = addonCard.querySelector('.addon-quantity');
+      const quantity = qtyInput ? parseInt(qtyInput.value) : 1;
+
+      items.push({
+        id: variantId,
+        quantity: quantity
+      });
+    });
+
+    // Safety check
+    if (items.length < 2) {
+      console.warn('Add-on selected but data missing');
+      return;
+    }
+
+    // Disable button to prevent double click
+    addToCartBtn.setAttribute('disabled', true);
+
+    fetch('/cart/add.js', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({ items })
+    })
+    .then(res => {
+      if (!res.ok) throw new Error();
+      return res.json();
+    })
+    .then(() => {
+      window.location.href = '/cart';
+    })
+    .catch(() => {
+      alert('Unable to add add-on products');
+      addToCartBtn.removeAttribute('disabled');
+    });
+
+  });
+
+});
