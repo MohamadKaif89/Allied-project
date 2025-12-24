@@ -1451,5 +1451,47 @@
         "default": "scheme-1"
       }
     ]
+  },
+  {
+    "name": "Free Gift Threshold",
+    "settings": [
+      {
+        "type": "checkbox",
+        "id": "free_gift_enable",
+        "label": "Enable Free Gift",
+        "default":true
+      },
+      {
+        "type": "number",
+        "id": "free_gift_threshold",
+        "label": "ThreeShold Amount",
+        "default":999
+      },
+      {
+        "type": "product",
+        "id": "free_gift_product",
+        "label": "Free Gift Product"
+      },
+      {
+        "type": "text",
+        "id": "free_gift_unlocked_message",
+        "label": "You’ve unlocked a free gift!",
+        "default": "Congratulation You have unlocked A free gift"
+      },
+      {
+        "type": "checkbox",
+        "id": "free_gift_show_progress",
+        "label": "Show Progress Message",
+        "default":true
+      },
+      {
+        "type": "text",
+        "id": "free_gift_progress_message",
+        "label": "Progress Message",
+        "default": "Add ₹{{amount}} more to get a free gift"
+
+      }
+     
+    ]
   }
 ]

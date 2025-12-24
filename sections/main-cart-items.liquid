@@ -27,8 +27,12 @@
 
 <cart-items class="gradient color-{{ section.settings.color_scheme }} isolate{% if cart == empty %} is-empty{% else %} section-{{ section.id }}-padding{% endif %}">
   <div class="page-width">
+    <div id="free-gift-message">
+    {{settings.free_gift_unlocked_message}}
+</div>
+<div id="free-gift-progress"></div>
     <div class="title-wrapper-with-link">
-      <h1 class="title title--primary">{{ 'sections.cart.title' | t }}</h1>
+      <h1 class="title title--primary ">{{ 'sections.cart.title' | t }}</h1>
       <a href="{{ routes.all_products_collection_url }}" class="underlined-link">
         {{- 'general.continue_shopping' | t -}}
       </a>
@@ -220,6 +224,7 @@
                       endif
                     -%}
                     <td class="cart-item__quantity{% if has_qty_rules or has_vol_pricing %} cart-item__quantity--info{% endif %}">
+                      {%  unless item.properties._free_gift  %}  
                       <quantity-popover>
                         <div class="cart-item__quantity-wrapper quantity-popover-wrapper">
                           <label class="visually-hidden" for="Quantity-{{ item.index | plus: 1 }}">
@@ -299,6 +304,7 @@
                               class="hidden"
                             {% endif %}
                           >
+                          {%  unless item.properties._free_gift  %}  
                             <a
                               href="{{ item.url_to_remove }}"
                               class="button button--tertiary"
@@ -308,6 +314,7 @@
                                 {{- 'icon-remove.svg' | inline_asset_content -}}
                               </span>
                             </a>
+                             {% endunless %}
                           </cart-remove-button>
                         </div>
                         {%- if has_qty_rules or has_vol_pricing -%}
@@ -402,7 +409,9 @@
                           </span>
                         </div>
                       </quantity-popover>
+                       {%endunless %}
                     </td>
+
 
                     <td class="cart-item__totals right small-hide">
                       {%- render 'loading-spinner' -%}
@@ -494,3 +503,30 @@
   ]
 }
 {% endschema %}
+
+<style>
+  .title {
+    font-size: 4rem;
+    font-weight: 700;
+  }
+  /* .caption-with-letter-spacing{
+    font-size: 3rem;
+    font-weight: 700;
+  } */
+   .cart-items th{
+     font-size: 3rem;
+    font-weight: 700;
+   }
+  .cart-item__details a{
+    font-size: 3rem;
+    font-weight: 700;
+  }
+  .product-option{
+    font-size: 2rem;
+    font-weight: 700;
+  }
+  .price--end{
+     font-size: 2rem;
+    font-weight: 700;
+  }
+</style>

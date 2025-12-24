@@ -92,6 +92,8 @@ class CartItems extends HTMLElement {
       return fetch(`${routes.cart_url}?section_id=cart-drawer`)
         .then((response) => response.text())
         .then((responseText) => {
+          // location.reload();
+          handleFreeGift()
           const html = new DOMParser().parseFromString(responseText, 'text/html');
           const selectors = ['cart-drawer-items', '.cart-drawer__footer'];
           for (const selector of selectors) {
@@ -160,6 +162,10 @@ class CartItems extends HTMLElement {
         return response.text();
       })
       .then((state) => {
+        // removeFreeGift();
+        //  location.reload();
+         handleFreeGift()
+
         const parsedState = JSON.parse(state);
 
         CartPerformance.measure(`${eventTarget}:paint-updated-sections"`, () => {
