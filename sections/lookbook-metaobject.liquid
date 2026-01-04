@@ -1,0 +1,136 @@
+<section>
+      <h1 class="task-title"> Metaobject-Driven Lookbook Page</h1> 
+    {% assign lookbookmeta  = shop.metaobjects.lookbook_sectionkaif.values %}
+    {% for lookbook in lookbookmeta %}
+        <div class="look-meta-container">
+            {% assign title = lookbook.look_title.value %}
+            {% assign lookbmetaimg  = lookbook.look_image.value %}
+            <div class="look-section">
+            {% if title  %}
+             
+                <h2 class="look-title">{{title}}</h2>
+            
+            {% endif %}
+            {% if lookbmetaimg %}
+                <div class="look-main">
+                    <img src="{{lookbmetaimg |  image_url }}" alt="{{title}}" width="" height="">
+                </div>
+       
+                
+            {% endif %}
+            </div>
+            {% if lookbook.product_handles %}
+                <div class="lookbook-handles">
+                    {% assign handles = lookbook.product_handles.value |  split: ","  %}
+                    {% for handle in handles %}
+                        {% assign producthandle = handle |  strip %}
+                        {% assign product = all_products[producthandle] %}
+                        <div class="product-card">
+                        <div class="product-img-box">
+                            <a href="{{product.url}}">
+                                <img src="{{product.featured_image |  image_url }}" alt="{{product.title}}" width="" height="">
+                            </a>
+                         
+                        </div>
+                        <div class="product-text-metabox">
+                               <p>{{product.title}}</p>
+                               <p>{{product.price |  money}}</p>
+                        </div>
+
+                        </div>
+                        
+                    {% endfor %}
+                    
+                </div>
+            
+            {% endif %}
+           
+        </div>
+        
+    {% endfor %}
+
+</section>
+<style>
+    .task-title{
+        text-align: center;
+    }
+.look-meta-container{
+ max-width: 1260px;
+  margin:auto;
+  padding:20px;
+}
+.look-section{
+  margin-bottom:60px;
+  border-bottom:1px solid #eee;
+  padding-bottom:25px;
+}
+.look-title{
+  font-size:24px;
+  margin-bottom:10px;
+   text-align: center;
+  font-weight: 800;
+}
+.look-main img{
+  width:100%;
+  border-radius:6px;
+  margin-bottom:15px;
+}
+.lookbook-handles{
+     display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:15px;
+}
+.product-card{
+    border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+}
+.product-img-box{
+     width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.product-img-box img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.product-text-metabox{
+      display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+.product-text-metabox p{
+     margin: 2px 0;
+    font-size: 2rem;
+    font-weight: 900;
+}
+@media (max-width: 1040px) {
+    .lookbook-handles{
+        grid-template-columns: repeat(2,1fr);
+
+    }
+
+    
+}
+@media (max-width: 768px) {
+    .lookbook-handles{
+        grid-template-columns: 1fr;
+    }
+ .product-card img{
+  width:100%;
+  border-radius:4px;
+}
+.product-card{
+  max-width: 75%;
+  margin: auto;
+}
+    
+}
+</style>

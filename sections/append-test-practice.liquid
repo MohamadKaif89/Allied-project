@@ -1,0 +1,74 @@
+<section>
+    <div class="append-container">
+        <div class="append-row">
+            <div class="pdp-left">
+                <div class="swiper main-swiper">
+                    <div class="swiper-wrapper">
+                        {% for media in product.media %}
+                            <div class="swiper-slide">
+                                <img src="{{media |  image_url }}" alt="{{media.tittle}}" width="" height="">
+                            </div>
+                            
+                        {% endfor %}
+                    </div>
+
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+
+                </div>
+
+                <div class="swiper thumb-swiper">
+                    <div class="swiper-wrapper">
+                        {% for media in product.media %}
+                            <div class="swiper-slide">
+                                <img src="{{media |  image_url }}" alt="" width="" height="">
+                            </div>
+                            
+                        {% endfor %}
+
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="pdp-right">
+
+            </div>
+        </div>
+    </div>
+</section>
+<style>
+    .append-container{
+        width: 100%;
+        max-width: 1260px;
+        margin: auto;
+    }
+    .append-row{
+        display: flex;
+        justify-content: space-between;
+    }
+    .swiper {
+  width: 100%;
+}
+
+.swiper-slide {
+  width: auto;
+}
+
+.thumb-swiper .swiper-slide {
+  width: 80px;
+  height: 80px;
+}
+</style>
+{% schema %}
+    {
+        "name": "Append Practice",
+        "settings": [],
+        "presets": [
+            {
+                "name": "Append Practice"
+            }
+        ]
+    }
+{% endschema %}   
+                           

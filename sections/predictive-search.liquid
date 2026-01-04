@@ -27,6 +27,10 @@
           aria-labelledby="predictive-search-queries"
         >
           {%- for query in predictive_search.resources.queries -%}
+            {% comment %} {% unless product.tags contains "free-gift-hidden" %}
+               {% endunless %} {% endcomment %}
+              
+           
             <li
               id="predictive-search-option-query-{{ forloop.index }}"
               class="predictive-search__list-item"
@@ -44,6 +48,7 @@
                 </div>
               </a>
             </li>
+            
           {%- endfor -%}
           {%- for collection in predictive_search.resources.collections -%}
             <li

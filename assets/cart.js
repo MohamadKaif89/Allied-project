@@ -93,7 +93,7 @@ class CartItems extends HTMLElement {
         .then((response) => response.text())
         .then((responseText) => {
           // location.reload();
-          handleFreeGift()
+          handleFreeGift();
           const html = new DOMParser().parseFromString(responseText, 'text/html');
           const selectors = ['cart-drawer-items', '.cart-drawer__footer'];
           for (const selector of selectors) {

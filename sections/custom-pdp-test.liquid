@@ -1,5 +1,8 @@
 <section>
     <div class="pdp-container">
+        {% unless product.tags contains "free-gift-hidden" %}
+            
+        
         <div class="pdp-row">
             <div class="leftimg">
                 <img src="{{product.featured_image |  image_url }}" alt="" width="" height="">
@@ -29,11 +32,15 @@
                         data-stock="{{product.selected_or_first_available_variant.inventory_quantity}}">
                 </div>
                 {% comment %} Add to cart button {% endcomment %}
+                 {% unless product.tags contains "free-gift-hidden" %}
+                    
+                
                 <form action="">
                     <button class="addToCartBtn" type="submit"
                         data-main-variant="{{product.selected_or_first_available_variant.id}}">Add To Cart</button>
 
                 </form>
+                 {% endunless %}
 
                 {% comment %} Add on Products {% endcomment %}
                 {% if product.metafields.custom.add_on_products.value != blank %}
@@ -80,6 +87,7 @@
                 {% endif %}
             </div>
         </div>
+        {% endunless %}
     </div>
 </section>
 {% schema %}

@@ -24,13 +24,15 @@
 {%- endunless -%}
 
 <script src="{{ 'quantity-popover.js' | asset_url }}" defer="defer"></script>
-
-<cart-items class="gradient color-{{ section.settings.color_scheme }} isolate{% if cart == empty %} is-empty{% else %} section-{{ section.id }}-padding{% endif %}">
-  <div class="page-width">
-    <div id="free-gift-message">
+ <div id="free-gift-message">
     {{settings.free_gift_unlocked_message}}
 </div>
 <div id="free-gift-progress"></div>
+
+<cart-items class="gradient color-{{ section.settings.color_scheme }} isolate{% if cart == empty %} is-empty{% else %} section-{{ section.id }}-padding{% endif %}">
+  <div class="page-width">
+
+   
     <div class="title-wrapper-with-link">
       <h1 class="title title--primary ">{{ 'sections.cart.title' | t }}</h1>
       <a href="{{ routes.all_products_collection_url }}" class="underlined-link">
@@ -93,7 +95,9 @@
                     <td class="cart-item__media">
                       {% if item.image %}
                         {% comment %} Leave empty space due to a:empty CSS display: none rule {% endcomment %}
+                         {% unless item.properties._free_gift%}
                         <a href="{{ item.url }}" class="cart-item__link" aria-hidden="true" tabindex="-1"> </a>
+                         {%endunless %}
                         <div class="cart-item__image-container gradient {% if item.parent_relationship.parent == null %}global-media-settings{% endif %}">
                           <img
                             src="{{ item.image | image_url: width: 300 }}"
@@ -111,8 +115,11 @@
                       {%- if settings.show_vendor -%}
                         <p class="caption-with-letter-spacing">{{ item.product.vendor }}</p>
                       {%- endif -%}
-
+                      {% if item.properties._free_gift %}
+                        <span class="cart-item__name h4 break">{{item.product.title |  escape}}</span>
+                        {% else %}
                       <a href="{{ item.url }}" class="cart-item__name h4 break">{{ item.product.title | escape }}</a>
+                      {% endif %}
 
                       {%- if item.original_price != item.final_price -%}
                         <div class="cart-item__discounted-prices">
@@ -224,6 +231,7 @@
                       endif
                     -%}
                     <td class="cart-item__quantity{% if has_qty_rules or has_vol_pricing %} cart-item__quantity--info{% endif %}">
+                      
                       {%  unless item.properties._free_gift  %}  
                       <quantity-popover>
                         <div class="cart-item__quantity-wrapper quantity-popover-wrapper">

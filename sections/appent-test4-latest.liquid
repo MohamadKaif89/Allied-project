@@ -1,0 +1,345 @@
+<div class="pdp-wrapper">
+    <div class="pdp-left">
+        <div class="swiper mainSwiper">
+            <div class="swiper-wrapper" id="main-slide">
+                {% for media in product.media %}
+                <div class="swiper-slide">
+                    <img src="{{ media | image_url}}" width="" height="">
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+        <div class="swiper thumbSwiper">
+            <div class="swiper-wrapper" id="thumb-slide">
+                {% for media in product.media %}
+                <div class="swiper-slide">
+                    <img src="{{ media | image_url }}" width="" height="">
+                </div>
+                {% endfor %}
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+
+    </div>
+
+    <div class="pdp-right">
+
+        <h1 id="pdp-title">{{ product.title }}</h1>
+
+        <p id="pdp-price">{{ product.price | money }}</p>
+
+        <label>Select Variant</label>
+        <select id="variantSelect">
+            {% for v in product.variants %}
+            <option value="{{ v.id }}">{{ v.title }}</option>
+            {% endfor %}
+        </select>
+
+        <button id="addToCartBtn">Add To Cart</button>
+
+
+        <h3>Related Products</h3>
+
+        <div class="related-wrapper">
+            {% for p in product.metafields.custom.product_append.value %}
+            <button class="related-btn" data-handle="{{ p.handle }}">
+                <img src="{{ p.featured_image | image_url }}" width="" height="">
+                <span>{{ p.title }}</span>
+            </button>
+            {% endfor %}
+        </div>
+
+    </div>
+
+</div>
+{% schema %}
+{
+"name": "Appent Test4L",
+"settings": [],
+"presets": [
+{
+"name": "Appent Test4L"
+}
+]
+}
+{% endschema %}
+
+<style>
+    .pdp-wrapper {
+        display: flex;
+        gap: 30px;
+        flex-wrap: wrap;
+        align-items: flex-start;
+    }
+
+    .pdp-left {
+        width: 60%;
+        min-width: 300px;
+        margin-left: 1%;
+    }
+
+    .pdp-right {
+        width: 34%;
+        min-width: 300px;
+        margin-left: 1%;
+    }
+
+    .mainSwiper {
+        width: 100%;
+        border-radius: 12px;
+        /* overflow: hidden; */
+    }
+
+    .mainSwiper .swiper-slide {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+        border-radius: 12px;
+    }
+
+    .mainSwiper img {
+        width: 100%;
+        height: 420px;
+        object-fit: cover;
+        border-radius: 12px;
+    }
+
+
+    .thumbSwiper {
+        margin-top: 10px;
+    }
+
+    .thumbSwiper .swiper-slide {
+        height: 80px;
+        width: 80px;
+        border: 2px solid transparent;
+        border-radius: 10px;
+        overflow: hidden;
+        cursor: pointer;
+    }
+
+    .thumbSwiper .swiper-slide-thumb-active {
+        border-color: #000;
+    }
+
+    .thumbSwiper img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+
+    .swiper-button-next,
+    .swiper-button-prev {
+        color: #000;
+        background-color: white;
+        border-radius: 50%;
+        width: 36px;
+        height: 36px;
+    }
+
+    /* .swiper-button-next:after, .swiper-button-prev:after {
+        font-size: 16px;
+    } */
+
+    #pdpTitle {
+        margin: 0 0 5px 0;
+    }
+
+    #pdp-price {
+        font-size: 18px;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+
+    #variantSelect {
+        padding: 8px;
+        width: 100%;
+        max-width: 20%;
+        border: 1px solid black;
+        outline: none;
+        margin-left: 5%;
+
+    }
+
+    #addToCartBtn {
+        margin-top: 10px;
+        padding: 10px 16px;
+        background-color: black;
+        color: white;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        margin-left: 4%;
+    }
+
+    .related-wrapper {
+        display: flex;
+        gap: 12px;
+        flex-wrap: wrap;
+        margin-top: 18px;
+    }
+
+    .related-btn {
+        border: 1px solid #ddd;
+        background-color: white;
+        border-radius: 10px;
+        padding: 6px;
+        cursor: pointer;
+        width: 90px;
+        text-align: center;
+    }
+
+    .related-btn img {
+        width: 100%;
+        height: 80px;
+        object-fit: cover;
+        border-radius: 8px;
+    }
+
+    .related-btn span {
+        font-size: 11px;
+        display: block;
+        margin-top: 3px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        width: 70px;
+        /* background-color: rebeccapurple; */
+        white-space: nowrap;
+    }
+
+    .swiper-navigation-icon {
+        height: 65% !important;
+
+    }
+
+    @media(max-width:768px) {
+        .pdp-wrapper {
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .pdp-left,
+        .pdp-right {
+            width: 100%;
+        }
+
+        .mainSwiper img {
+            height: 300px;
+        }
+
+        .thumbSwiper .swiper-slide {
+            width: 65px;
+            height: 65px;
+        }
+
+        .pdp-wrapper {
+            gap: 20px;
+        }
+    }
+</style>
+
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        const thumbSwiper = new Swiper(".thumbSwiper", {
+            slidesPerView: 4,
+            spaceBetween: 10
+        });
+
+        const mainSwiper = new Swiper(".mainSwiper", {
+            spaceBetween: 10,
+            thumbs: { swiper: thumbSwiper },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev"
+            }
+        });
+
+        const title = document.getElementById("pdp-title");
+        const price = document.getElementById("pdp-price");
+        const variantSelect = document.getElementById("variantSelect");
+        const addBtn = document.getElementById("addToCartBtn");
+        const mainSlides = document.getElementById("main-slide");
+        const thumbSlides = document.getElementById("thumb-slide");
+
+
+        let currentProduct = {
+            variants: {{ product.variants | json }},
+        images: {{ product.images | json }}
+  };
+
+    addBtn.addEventListener("click", async () => {
+        await fetch("/cart/add.js", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({
+                id: variantSelect.value,
+                quantity: 1
+            })
+        });
+
+        alert("Added to cart");
+    });
+
+    variantSelect.addEventListener("change", () => {
+
+        const selected = currentProduct.variants.find(
+            v => v.id == variantSelect.value
+        );
+
+        if (!selected || !selected.featured_image)
+        
+        return;
+        
+        const imgName = selected.featured_image.src.split("/").pop();
+
+        const index = currentProduct.images.findIndex(img =>
+            img.includes(imgName)
+        );
+
+        if (index >= 0) {
+            mainSwiper.slideTo(index);
+        }
+    });
+
+    document.querySelectorAll(".related-btn").forEach(btn => {
+        btn.addEventListener("click", async () => {
+
+            const handle = btn.dataset.handle;
+            const res = await fetch(`/products/${handle}.js`);
+            const product = await res.json();
+
+            currentProduct = product;
+
+            title.textContent = product.title;
+            price.textContent = "₹" + product.price / 100;
+
+            variantSelect.innerHTML = product.variants.map(v =>
+                `<option value="${v.id}">${v.title}</option>`
+            ).join("");
+            mainSlides.innerHTML = "";
+            thumbSlides.innerHTML = "";
+
+            product.images.forEach(img => {
+                mainSlides.innerHTML += `
+          <div class="swiper-slide">
+             <img src="${img}">
+          
+          </div>`;
+                thumbSlides.innerHTML += `
+          <div class="swiper-slide">
+            <img src="${img}">
+          
+          </div>`;
+            });
+
+            mainSwiper.update();
+            thumbSwiper.update();
+            mainSwiper.slideTo(0);
+        });
+    });
+
+});
+</script>

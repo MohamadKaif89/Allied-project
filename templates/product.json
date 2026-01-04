@@ -9,6 +9,11 @@
  */
 {
   "sections": {
+    "custom_pdp_test_pxLWbD": {
+      "type": "custom-pdp-test",
+      "name": "Pdp Test",
+      "settings": {}
+    },
     "main": {
       "type": "main-product",
       "blocks": {
@@ -103,6 +108,7 @@
     }
   },
   "order": [
+    "custom_pdp_test_pxLWbD",
     "main",
     "related-products"
   ]

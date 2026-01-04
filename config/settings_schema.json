@@ -1459,7 +1459,7 @@
         "type": "checkbox",
         "id": "free_gift_enable",
         "label": "Enable Free Gift",
-        "default":true
+        "default":false
       },
       {
         "type": "number",
@@ -1482,15 +1482,49 @@
         "type": "checkbox",
         "id": "free_gift_show_progress",
         "label": "Show Progress Message",
-        "default":true
+        "default":false
       },
       {
         "type": "text",
         "id": "free_gift_progress_message",
         "label": "Progress Message",
-        "default": "Add ₹{{amount}} more to get a free gift"
+        "default": "Add to get a free gift"
 
-      }
+      },
+      {
+        "type": "number",
+        "id": "free_gift_threshold_1",
+        "label": "Tier 1 Threshold",
+        "default": 2000
+      },
+      {
+        "type": "product",
+        "id": "free_gift_product_1",
+        "label": "Tier 1 product"
+      },
+        {
+        "type": "number",
+        "id": "free_gift_threshold_2",
+        "label": "Tier 2 Threshold",
+        "default": 3000
+      },
+      {
+        "type": "product",
+        "id": "free_gift_product_2",
+        "label": "Tier 2 product"
+      },
+        {
+        "type": "number",
+        "id": "free_gift_threshold_3",
+        "label": "Tier 3 Threshold",
+        "default": 4000
+      },
+      {
+        "type": "product",
+        "id": "free_gift_product_3",
+        "label": "Tier 3 product"
+      },
+     
      
     ]
   }
