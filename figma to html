@@ -1,0 +1,1953 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Figma to html</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+  <div class="top-header">
+  <div class="top-inner">
+    <div class="top-links">
+      <ul>
+        <li><a href="#">View/Pay My Bill</a></li>
+        <li><span class="divider">|</span></li>
+        <li><a href="#">Check Availability</a></li>
+        <li><span class="divider">|</span></li>
+        <li><a href="#">Map</a></li>
+        <li><span class="divider">|</span></li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- header -->
+<header class="main-header">
+  <div class="header-inner">
+
+    <div class="header-logo">
+      <img src="./images/Logo (8).png" alt="logo">
+    </div>
+
+    <nav class="header-nav">
+      <ul>
+        <li><a href="#" class="has-arrow">Residential Service  <img src="./images/Vector 19.png" class="nav-arrow" alt=""></a></li>
+        <li><a href="#">Business Service</a></li>
+        <li><a href="#">Check Availability</a></li>
+        <li><a href="#" class="has-arrow">Support & Resources</a></li>
+        <li><a href="#" class="has-arrow">About Us</a></li>
+      </ul>
+    </nav>
+
+    <div class="header-icons">
+      <button class="icon-btn search"><img src="./images/search.png" alt=""></button>
+      <button class="icon-btn menu">☰</button>
+    </div>
+
+  </div>
+</header>
+
+
+<!-- hero section -->
+
+<section class="hero">
+  <div class="hero-overlay">
+
+    <div class="hero-content">
+
+      <div class="wifi">
+        <img src="./images/wifi.png" alt="">
+        <span>Fiber Internet</span>
+      </div>
+
+      <h1>Lightning Fast Fiber Internet — Built for Your Home & Business</h1>
+      <p class="sub">
+        Reliable, symmetrical fiber speeds with no data caps, no contracts, and no surprises
+      </p>
+
+      <div class="hero-form">
+        <p>Check Availability In Your Area</p>
+
+        <div class="form-grid">
+          <input type="text" placeholder="Address">
+          <input type="text" placeholder="Unit #">
+          <input type="text" placeholder="Zip">
+
+          <select>
+            <option>Select Market</option>
+          </select>
+
+          <button>Check Availability</button>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+
+
+    <!-- countdown -->
+
+    <div class="countdown-bar">
+      <div class="countdown-container">
+        <div class="time">
+          <img src="./images/clock.png" alt="clock" />
+          <span>07 days 12 hrs 09 mins 10 secs</span>
+        </div>
+
+        <div class="message">
+          Last chance! Switch to Fiber Internet & get 3 months free.
+        </div>
+
+        <a href="#" class="details"> Check Details <span><img src="./images/Group 2.png" alt="icon"></span> </a>
+      </div>
+    </div>
+
+    <!-- services section -->
+
+    <section class="services">
+      <div class="services-container">
+        <h2>Our Services</h2>
+        <p class="subtitle">
+          Lorem ipsum dolor sit amet consectetur. Amet massa elementum tincidunt
+          integer imperdiet mi a et mauris. Amet mi a vitae mi amet blandit at
+          senectus odio.
+        </p>
+
+        <div class="services-grid">
+          <div class="service-card">
+            <div class="icon"><img src="./images/Layer_1-2.png" /></div>
+            <h3>Pay Bill</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur. Amet massa elementum
+              tincidunt.
+            </p>
+            
+          </div>
+
+          <div class="service-card">
+            <div class="icon"><img src="images/start.svg" /></div>
+            <h3>Start Service</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur. Amet massa elementum
+              tincidunt.
+            </p>
+            <span class="arrow"><img src="./images/services-arrow.png" alt=""></span>
+          </div>
+
+          <div class="service-card">
+            <div class="icon"><img src="images/support.svg" /></div>
+            <h3>Tech Support</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur. Amet massa elementum
+              tincidunt.
+            </p>
+          </div>
+
+          <div class="service-card">
+            <div class="icon"><img src="images/commercial.svg" /></div>
+            <h3>Commercial Plans</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur. Amet massa elementum
+              tincidunt.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- plans section -->
+
+    <section class="plans">
+      <div class="plans-container">
+        <h2>Plans & Pricing</h2>
+
+        <div class="plans-grid">
+          <div class="plan-card">
+            <div class="plan-top">
+              <p class="speed">300 Mbps Down/Up</p>
+              <div class="price-circle">
+                <span class="price">$59.99</span>
+                <span class="per">per month</span>
+              </div>
+            </div>
+
+            <div class="plan-body">
+              <p class="title">Speeds Provided with Plan</p>
+              <ul>
+                <li>Typical Download Speed <span>305 Mbps</span></li>
+                <li>Typical Upload Speed <span>305 Mbps</span></li>
+                <li>Typical Latency <span>3 ms</span></li>
+              </ul>
+            </div>
+
+            <button>Check Details</button>
+          </div>
+          <div class="plan-card">
+            <div class="plan-top">
+              <p class="speed">300 Mbps Down/Up</p>
+              <div class="price-circle">
+                <span class="price">$59.99</span>
+                <span class="per">per month</span>
+              </div>
+            </div>
+
+            <div class="plan-body">
+              <p class="title">Speeds Provided with Plan</p>
+              <ul>
+                <li>Typical Download Speed <span>305 Mbps</span></li>
+                <li>Typical Upload Speed <span>305 Mbps</span></li>
+                <li>Typical Latency <span>3 ms</span></li>
+              </ul>
+            </div>
+
+            <button>Check Details</button>
+          </div>
+          <div class="plan-card">
+            <div class="plan-top">
+              <p class="speed">300 Mbps Down/Up</p>
+              <div class="price-circle">
+                <span class="price">$59.99</span>
+                <span class="per">per month</span>
+              </div>
+            </div>
+
+            <div class="plan-body">
+              <p class="title">Speeds Provided with Plan</p>
+              <ul>
+                <li>Typical Download Speed <span>305 Mbps</span></li>
+                <li>Typical Upload Speed <span>305 Mbps</span></li>
+                <li>Typical Latency <span>3 ms</span></li>
+              </ul>
+            </div>
+
+            <button>Check Details</button>
+          </div>
+          <div class="plan-card">
+            <div class="plan-top">
+              <p class="speed">300 Mbps Down/Up</p>
+              <div class="price-circle">
+                <span class="price">$59.99</span>
+                <span class="per">per month</span>
+              </div>
+            </div>
+
+            <div class="plan-body">
+              <p class="title">Speeds Provided with Plan</p>
+              <ul>
+                <li>Typical Download Speed <span>305 Mbps</span></li>
+                <li>Typical Upload Speed <span>305 Mbps</span></li>
+                <li>Typical Latency <span>3 ms</span></li>
+              </ul>
+            </div>
+
+            <button>Check Details</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- connect section1 -->
+
+    <section class="connect">
+      <div class="connect-container">
+        <div class="connect-image">
+          <img src="./images/connect-img.png" alt="connect-img" />
+          
+        </div>
+
+        <div class="connect-content">
+          <span class="tag">⟨⟩ Connect</span>
+          <h2>Get Connected</h2>
+          <p>
+            Whether you want to learn more or you’re a current customer, we have
+            fiber solutions for you.
+          </p>
+
+          <div class="buttons">
+            <button class="primary">Check Availability</button>
+            <button class="secondary">
+              Learn More About Our Fiber Solutions
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- streaming section2 -->
+
+    <section class="streaming">
+      <div class="streaming-container">
+        <div class="streaming-content">
+          <span class="tag">
+            <img src="icons/tv.svg" alt="" />
+            Streaming
+          </span>
+
+          <h2>Streaming Made Simple</h2>
+
+          <p>
+            Enjoy seamless streaming, fast downloads, and lag-free gaming with
+            Central Access. Choose a bundle tailored to your needs.
+          </p>
+
+          <ul class="features">
+            <li>
+              <img src="icons/check-tv.svg" alt="" />
+              Seamless Streaming
+            </li>
+            <li>
+              <img src="icons/download.svg" alt="" />
+              Fast Download
+            </li>
+            <li>
+              <img src="icons/gaming.svg" alt="" />
+              Lag-Free Gaming
+            </li>
+          </ul>
+
+          <button class="btn">Learn More</button>
+        </div>
+
+        <div class="streaming-image">
+          <img src="./images/streaming-img.png" alt="img" />
+        </div>
+      </div>
+    </section>
+
+    <!-- network section -->
+
+    <section class="network">
+      <div class="network-container">
+        <div class="network-image">
+          <img src="./images/network-img.png" alt="" />
+        </div>
+
+        <div class="network-content">
+          <span class="tag">
+            <img src="icons/wifi.svg" alt="" />
+            Network
+          </span>
+
+          <h2>Advanced Security and Control for Your Home Network</h2>
+
+          <p class="subtitle">
+            Keep your devices from cyber threats with Protect IQ.
+          </p>
+
+          <div class="users">
+            <img src="images/u1.jpg" />
+            <img src="images/u2.jpg" />
+            <img src="images/u3.jpg" />
+            <span>20k<br />Happy Customers</span>
+          </div>
+
+          <div class="buttons">
+            <button class="primary">Learn About Protect IQ</button>
+            <button class="secondary">Learn About Experience IQ</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- stats section -->
+    <section class="stats">
+      <div class="stats-container">
+        <div class="stat-card">
+          <div class="icon"><img src="icons/shield.svg" /></div>
+          <h2>150k+</h2>
+          <p>Threats Blocked</p>
+        </div>
+
+        <div class="stat-card">
+          <div class="icon"><img src="icons/chat.svg" /></div>
+          <h2>99%</h2>
+          <p>Of Customers Recommend Our Services</p>
+        </div>
+
+        <div class="stat-card">
+          <div class="icon"><img src="icons/users.svg" /></div>
+          <h2>20k+</h2>
+          <p>Customers Served</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- faq section -->
+
+    <!-- <section class="faq">
+      <div class="faq-container">
+        <div class="faq-left">
+          <h2>Frequently Asked Questions</h2>
+          <p>
+            If you don’t see your question here, feel free to reach out to our
+            support team — we’re always here to help you.
+          </p>
+          <button class="contact">Contact Us</button>
+
+          <img src="./images/faq-img.png" class="faq-image" />
+        </div>
+        <div class="faq-right">
+          <div class="faq-item">
+            <div class="faq-title">
+              What is the difference between Wi-Fi and Internet?
+              <span>+</span>
+            </div>
+          </div>
+
+          <div class="faq-item active">
+            <div class="faq-title">
+              Why are Wi-Fi speeds slower than the hardwire speeds?
+              <span>−</span>
+            </div>
+            <div class="faq-content">
+              <p>
+                Wi-Fi is incredibly convenient, but it’s not as fast or reliable
+                as a direct wired connection. This is because Wi-Fi signals
+                travel through the air, where they can be affected by walls,
+                furniture, interference from other devices, and even the
+                distance from your router.
+              </p>
+
+              <p>
+                A wired (Ethernet) connection delivers a direct, uninterrupted
+                signal, providing the fastest and most stable speeds possible.
+                If you need maximum speed and reliability — especially for
+                gaming, streaming, or working from home — we recommend using a
+                wired connection whenever possible.
+              </p>
+
+              <p>
+                That said, our routers are designed to provide a superior Wi-Fi
+                experience, offering better range, speed, and reliability than
+                standard routers. Whether you need tips on router placement,
+                interference reduction, or an enhanced Wi-Fi solution, we’re
+                here to help!
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-title">
+              How much speed do I need?
+              <span>+</span>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-title">
+              Where do you offer service?
+              <span>+</span>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-title">
+              Do you offer television service?
+              <span>+</span>
+            </div>
+          </div>
+
+          <button class="more">More FAQs</button>
+        </div>
+      </div>
+    </section> -->
+
+    <!-- offices location section -->
+
+    <section class="offices">
+      <div class="offices-bg">
+        <h2>Our Offices</h2>
+        <p class="office-desc">
+          Office hours are Monday through Friday, 7:30 a.m. to 4:30 p.m, with
+          the Clanton, Rockford and Wetumpka offices closing for lunch from noon
+          to 1 p.m.
+        </p>
+
+        <div class="office-grid">
+          <div class="office-card">
+            <h3>Prattville Office</h3>
+            <div class="addr">
+              103 Jesse Samuel Hunt Boulevard Suite 201<br />
+              Prattville, AL 36066
+            </div>
+            <a href="#">Directions ↗</a>
+          </div>
+
+          <div class="office-card">
+            <h3>Clanton Office</h3>
+            <div class="addr">
+              2160 Big M Boulevard<br />
+              Clanton, AL 35046
+            </div>
+            <a href="#">Directions ↗</a>
+          </div>
+
+          <div class="office-card">
+            <h3>Wetumpka Office</h3>
+            <div class="addr">
+              637 Coosa River / Parkway<br />
+              Wetumpka, AL 36092
+            </div>
+            <a href="#">Directions ↗</a>
+          </div>
+
+          <div class="office-card">
+            <h3>Rockford Office</h3>
+            <div class="addr">
+              9191 U.S. Highway 231<br />
+              Rockford, AL 35136
+            </div>
+            <a href="#">Directions ↗</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <!-- left -->
+        <div class="footer-left">
+          <img src="./images/Group.png" class="logo" />
+
+          <h4>Connect With Us</h4>
+
+          <p class="phone">(888) 706 - 4754</p>
+
+          <p class="press">
+            Press:
+            <span>1</span> for New Service | <span>2</span> for Payment |
+            <span>3</span> for Tech Support
+          </p>
+
+          <div class="socials">
+            <a><img src="" alt="" /></a>
+            <a><img src="" alt="" /></a>
+            <a><img src="" alt="" /></a>
+            <a><img src="" alt="" /></a>
+          </div>
+        </div>
+        <div class="footer-links">
+          <div class="footer-group">
+            <div class="footer-title">
+              <h4>Quick Links</h4>
+              <span class="toggle">+</span>
+            </div>
+            <ul>
+              <li>Billing & Payment Options</li>
+              <li>Contact Us</li>
+              <li>FAQs</li>
+            </ul>
+          </div>
+
+          <div class="footer-group">
+            <div class="footer-title">
+              <h4>Legal Links</h4>
+              <span class="toggle">+</span>
+            </div>
+            <ul>
+              <li>Equal Opportunity Employer</li>
+              <li>Non-Discrimination Statement</li>
+              <li>Privacy Policy</li>
+              <li>Terms of Use</li>
+              <li>Website Accessibility</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      document.querySelectorAll(".faq-title").forEach((title) => {
+        title.addEventListener("click", function () {
+          const item = this.parentElement;
+          const icon = this.querySelector("span");
+
+          // Close all other FAQs
+          document.querySelectorAll(".faq-item").forEach((faq) => {
+            if (faq !== item) {
+              faq.classList.remove("active");
+              faq.querySelector("span").textContent = "+";
+            }
+          });
+
+          if (item.classList.contains("active")) {
+            item.classList.remove("active");
+            icon.textContent = "+";
+          } else {
+            item.classList.add("active");
+            icon.textContent = "−";
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
+
+
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    --nav-font-size: 16px;
+    --nav-font-weight: 500;
+    --nav-line-height: 100%;
+    --bg-blue: #2E76B0;
+    --bg-white: #FFFFFF;
+    --color-black: #272A2B;
+}
+body{
+    font-family: var(--font-family);
+
+}
+/* top header */
+.top-header{
+  background:#2f75aa;
+  height:42px;
+  width:100%;
+}
+
+.top-inner{
+  max-width:1400px;
+  margin:auto;
+  height:100%;
+  display:flex;
+  justify-content:flex-end;
+  align-items:center;
+  padding:0 40px;
+}
+
+.top-links ul{
+  list-style:none;
+  margin:0;
+  padding:0;
+  display:flex;
+  align-items:center;
+  gap:14px;
+}
+
+.top-links li{
+  display:flex;
+  align-items:center;
+}
+
+.top-links a{
+  color:#fff;
+  font-size:14px;
+  font-weight:500;
+  text-decoration:none;
+  line-height:1;
+}
+
+.top-links .divider{
+  color:rgba(255,255,255,0.5);
+  font-size:14px;
+}
+@media(max-width:768px){
+
+  .top-inner{
+    justify-content:center;
+    padding:0 16px;
+  }
+
+  .top-links ul{
+    flex-wrap:wrap;
+    justify-content:center;
+    row-gap:6px;
+    column-gap:12px;
+  }
+
+  .top-links li{
+    line-height:1.4;
+  }
+
+}
+
+/* header */
+.main-header{
+  width:100%;
+  background:#fff;
+  border-bottom:1px solid #eee;
+}
+
+.header-inner{
+  max-width:1400px;
+  margin:auto;
+  padding:18px 20px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+}
+
+.header-logo img{
+  height:40px;
+}
+
+/* NAV */
+.header-nav ul{
+  display:flex;
+  gap:32px;
+  list-style:none;
+  padding:0;
+  margin:0;
+}
+
+.header-nav li{
+  display:flex;
+}
+
+.header-nav a{
+  display:flex;
+  align-items:center;
+  gap:6px; 
+  text-decoration:none;
+  color:#222;
+  font-size:16px;
+  font-weight:500;
+  white-space:nowrap;
+}
+
+.nav-arrow{
+  width:10px;
+  height:auto;
+  transform:translateY(1px);
+}
+
+.header-icons{
+  display:flex;
+  align-items:center;
+  gap:18px;
+}
+
+.icon-btn{
+  background:none;
+  border:none;
+  font-size:22px;
+  cursor:pointer;
+}
+
+.icon-btn.menu{
+  display:none;
+}
+
+/* TABLET & MOBILE */
+@media(max-width:1024px){
+
+  .header-nav{
+    display:none;
+  }
+
+  .icon-btn.menu{
+    display:block;
+  }
+}
+
+
+/* hero section */
+.hero{
+  width:100%;
+  min-height:620px;
+  background:
+    linear-gradient(90deg,
+      rgba(31,161,73,.95) 0%,
+      rgba(31,161,73,.90) 38%,
+      rgba(31,161,73,.50) 58%,
+      rgba(31,161,73,.10) 72%,
+      rgba(255,255,255,0) 82%
+    ),
+    url("./images/hero.jpg");
+  background-size:cover;
+  background-position:center;
+}
+
+.hero-overlay{
+  width:100%;
+  height:100%;
+  display:flex;
+  align-items:center;
+}
+
+.hero-content{
+  width:100%;
+  max-width:640px;
+  padding-left:70px;
+  padding-top:60px;
+  padding-bottom:60px;
+}
+
+/* WIFI TAG */
+.wifi{
+  display:inline-flex;
+  align-items:center;
+  gap:10px;
+  padding:8px 18px;
+  border-radius:50px;
+  border:1px solid rgba(255,255,255,.4);
+  color:#fff;
+  margin-bottom:24px;
+}
+
+/* TEXT */
+.hero h1{
+  font-size:42px;
+  font-weight:700;
+  line-height:1.15;
+  color:#fff;
+}
+
+.hero .sub{
+  font-size:20px;
+  margin-top:16px;
+  color:#fff;
+}
+
+/* FORM */
+.hero-form{
+  background:#fff;
+    border: 1px solid var(--bg-white);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 30px;
+  padding:24px;
+  margin-top:32px;
+  max-width:520px;
+}
+
+.hero-form p{
+  color:#1FA149;
+  font-weight:600;
+  margin-bottom:16px;
+}
+
+.form-grid{
+  display:flex;
+  flex-wrap:wrap;
+  gap:8px;
+}
+
+.form-grid input,
+.form-grid select{
+  height:46px;
+  border-radius:10px;
+  border:none;
+  background:#f1f1f1;
+  padding:0 16px;
+}
+
+.form-grid input:nth-child(1){ width:200px; }
+.form-grid input:nth-child(2){ width:100px; }
+.form-grid input:nth-child(3){ width:120px; }
+
+.form-grid select{
+  width:200px;
+}
+
+.form-grid button{
+  width:260px;
+  background:#1FA149;
+  color:#fff;
+  border:none;
+  border-radius:10px;
+  height:46px;
+  cursor:pointer;
+}
+
+/* TABLET */
+@media(max-width:1024px){
+  .hero-content{
+    padding-left:40px;
+  }
+}
+
+/* MOBILE */
+@media(max-width:768px){
+  .hero{
+    background:
+      linear-gradient(180deg,
+        rgba(31,161,73,.95) 0%,
+        rgba(31,161,73,.90) 55%,
+        rgba(31,161,73,.80) 100%
+      ),
+      url("./images/hero.jpg");
+  }
+
+  .hero-overlay{
+    align-items:flex-end;
+  }
+
+  .hero-content{
+    max-width:100%;
+    padding:24px;
+  }
+
+  .hero-form{
+    width:100%;
+    margin-top:24px;
+  }
+
+  .form-grid input,
+  .form-grid select,
+  .form-grid button{
+    width:100%;
+  }
+}
+
+
+
+
+
+/* countdown */
+.countdown-bar{
+  width:100%;
+  background:#337AB7;
+}
+
+.countdown-container{
+  max-width:1440px;
+  margin:auto;
+  padding:12px 70px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  color:white;
+  font-size:14px;
+}
+
+.time{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  font-weight:500;
+}
+
+.time img{
+  width:16px;
+}
+
+.message{
+  font-weight:500;
+  opacity:0.95;
+}
+
+.details{
+  color:white;
+  text-decoration:none;
+  font-weight:600;
+  display:flex;
+  align-items:center;
+  gap:6px;
+}
+/* services section */
+
+.services{
+  background:#eefaf5;
+  border-radius:0 300px 0 0;
+  padding:100px 0;
+}
+
+.services-container{
+  max-width:1300px;
+  margin:auto;
+  text-align:center;
+}
+
+.services h2{
+  font-size:36px;
+  font-weight:700;
+}
+
+.subtitle{
+  max-width:700px;
+  margin:15px auto 60px;
+  color:#666;
+  line-height:1.6;
+}
+
+.services-grid{
+  display:grid;
+  grid-template-columns:repeat(4, 1fr);
+  gap:30px;
+}
+
+/* Tablet */
+@media(max-width:1280px){
+  .services-grid{
+    grid-template-columns:repeat(2, 1fr);
+  }
+}
+
+/* Cards */
+.service-card{
+  background:#1FA149;
+  color:white;
+  border-radius:20px;
+  padding:40px 30px;
+  text-align:center;
+  position:relative;
+  transition:0.4s ease;
+  box-shadow:0 0 0 rgba(0,0,0,0);
+}
+
+/* Hover illusion — NOT real size change */
+.service-card:hover{
+  transform:translateY(-14px);
+  box-shadow:0 25px 50px rgba(0,0,0,0.18);
+}
+
+/* Icon */
+.icon{
+  width:90px;
+  height:90px;
+  background:white;
+  border-radius:50%;
+  margin:0 auto 25px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+/* Text */
+.service-card h3{
+  font-size:22px;
+  margin-bottom:12px;
+}
+
+.service-card p{
+  font-size:15px;
+  line-height:1.6;
+  opacity:0.9;
+}
+
+/* Arrow */
+.arrow{
+  position:absolute;
+  bottom:15px;
+  right:15px;
+  width:40px;
+  height:40px;
+  border:2px solid white;
+  border-radius:8px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:18px;
+}
+
+@media(max-width:768px){
+
+  .services{
+    padding:60px 20px;
+    border-radius:0 120px 0 0;
+  }
+
+  .services-container{
+    max-width:100%;
+  }
+
+  .services-grid{
+    grid-template-columns:repeat(2, 1fr);
+    gap:16px;
+  }
+
+  .service-card{
+    padding:30px 20px 60px;
+    border-radius:24px;
+  }
+
+  .icon{
+    width:70px;
+    height:70px;
+    margin-bottom:20px;
+  }
+
+  .service-card h3{
+    font-size:18px;
+  }
+
+  .service-card p{
+    font-size:14px;
+    line-height:1.5;
+  }
+
+  .arrow{
+    width:36px;
+    height:36px;
+    bottom:12px;
+    right:12px;
+  }
+
+  .services h2{
+    font-size:28px;
+  }
+
+  .subtitle{
+    font-size:14px;
+    padding:0 10px;
+  }
+
+}
+/* plans sections */
+
+.plans{
+  background:#1f77b4;
+  padding:100px 0;
+  color:white;
+}
+
+.plans-container{
+  max-width:1300px;
+  margin:auto;
+  text-align:center;
+}
+
+.plans h2{
+  font-size:42px;
+  margin-bottom:60px;
+}
+
+/* GRID */
+.plans-grid{
+  display:grid;
+  grid-template-columns:repeat(4, 1fr);
+  gap:30px;
+}
+
+/* Tablet */
+@media(max-width:1280px){
+  .plans-grid{
+    grid-template-columns:repeat(2, 1fr);
+  }
+}
+
+/* Mobile */
+@media(max-width:600px){
+  .plans-grid{
+    grid-template-columns:repeat(2, 1fr);
+    gap:16px;
+  }
+   .plan-body{
+    display:none;
+  }
+
+  .plan-card{
+    padding-bottom:20px;
+  }
+
+  .price-circle{
+    width:120px;
+    height:120px;
+    bottom:-60px;
+  }
+
+  .plans h2{
+    font-size:28px;
+  }
+}
+
+/* CARD */
+.plan-card{
+  background:white;
+  color:#111;
+  border-radius:14px;
+  padding-bottom:30px;
+  overflow:hidden;
+  box-shadow:0 10px 25px rgba(0,0,0,0.15);
+}
+
+/* Top green panel */
+.plan-top{
+  background:#ecf8f1;
+  padding:30px 20px 60px;
+  position:relative;
+}
+
+.speed{
+  color:#1FA149;
+  font-weight:600;
+}
+
+/* Price */
+.price-circle{
+  width:130px;
+  height:130px;
+  background:white;
+  border-radius:50%;
+  position:absolute;
+  left:50%;
+  bottom:-65px;
+  transform:translateX(-50%);
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  box-shadow:0 10px 20px rgba(0,0,0,0.15);
+}
+
+.price{
+  font-size:28px;
+  font-weight:700;
+  color:#1FA149;
+}
+.per{
+  font-size:14px;
+}
+
+/* Body */
+.plan-body{
+  margin-top:80px;
+  padding:0 25px;
+}
+
+.title{
+  font-weight:600;
+  margin-bottom:20px;
+}
+
+.plan-body ul{
+  list-style:none;
+  padding:20px;
+  background:#ecf8f1;
+  border-radius:8px;
+}
+
+.plan-body li{
+  display:flex;
+  justify-content:space-between;
+  font-size:14px;
+  margin:8px 0;
+}
+
+/* Button */
+.plan-card button{
+  margin-top:25px;
+  background:#1FA149;
+  color:white;
+  border:none;
+  padding:12px 24px;
+  border-radius:8px;
+  cursor:pointer;
+}
+
+/* connect section1 */
+.connect{
+  padding:100px 0;
+}
+
+.connect-container{
+  max-width:1300px;
+  margin:auto;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:60px;
+}
+
+/* Desktop (1440) */
+.connect-image{
+  width:52%;
+}
+.connect-content{
+  width:48%;
+}
+
+/* Tablet (1200) */
+@media(max-width:1280px){
+  .connect-container{
+    max-width:1200px;
+  }
+
+  .connect-image{
+    width:55%;
+  }
+
+  .connect-content{
+    width:45%;
+  }
+}
+
+/* Mobile */
+@media(max-width:768px){
+  .connect-container{
+    flex-direction:column;
+    padding:0 20px;
+  }
+
+  .connect-image{
+    width:100%;
+  }
+
+  .connect-content{
+    width:100%;
+  }
+}
+
+/* Image */
+.connect-image{
+  position:relative;
+}
+
+.connect-image img{
+  width:100%;
+  border-radius:20px;
+  display:block;
+}
+
+.connect-content .tag{
+  color:#2f76b6;
+  font-weight:600;
+}
+
+.connect-content h2{
+  font-size:42px;
+  margin:15px 0;
+}
+
+.connect-content p{
+  font-size:18px;
+  line-height:1.6;
+  max-width:420px;
+}
+
+/* Buttons */
+.buttons{
+  margin-top:30px;
+  display:flex;
+  gap:20px;
+}
+
+/* Tablet buttons stack */
+@media(max-width:1280px){
+  .buttons{
+    flex-direction:column;
+    width:fit-content;
+  }
+}
+
+/* Buttons style */
+.primary,
+.secondary{
+  background:#2f76b6;
+  color:white;
+  border:none;
+  padding:14px 24px;
+  border-radius:10px;
+  cursor:pointer;
+}
+
+/* streaming section2 */
+
+.streaming{
+  padding:100px 0;
+}
+
+.streaming-container{
+  max-width:1300px;
+  margin:auto;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:80px;
+}
+
+/* Desktop */
+.streaming-content{ width:45%; }
+.streaming-image{ width:55%; }
+
+/* Tablet */
+@media(max-width:1280px){
+  .streaming-container{ max-width:1200px; }
+  .streaming-content{ width:48%; }
+  .streaming-image{ width:52%; }
+}
+
+/* Mobile */
+@media(max-width:768px){
+  .streaming-container{
+    flex-direction:column;
+    padding:0 20px;
+    gap:40px;
+  }
+    .streaming-image{
+    order:1;
+  }
+
+  .streaming-content{
+    order:2;
+  }
+
+  .streaming-content,
+  .streaming-image{
+    width:100%;
+  }
+
+}
+
+/* Text */
+.tag{
+  display:flex;
+  align-items:center;
+  gap:8px;
+  color:#2f76b6;
+  font-weight:600;
+}
+
+.streaming-content h2{
+  font-size:42px;
+  margin:15px 0;
+}
+
+.streaming-content p{
+  font-size:18px;
+  line-height:1.6;
+  max-width:420px;
+}
+
+/* Features list with icons */
+.features{
+  list-style:none;
+  padding:0;
+  margin:25px 0;
+}
+
+.features li{
+  display:flex;
+  align-items:center;
+  gap:12px;
+  margin:12px 0;
+  font-size:16px;
+  color:#4a4a4a;
+}
+
+.features img{
+  width:22px;
+  height:22px;
+}
+
+/* Button */
+.btn{
+  background:#2f76b6;
+  color:white;
+  border:none;
+  padding:14px 28px;
+  border-radius:10px;
+  cursor:pointer;
+}
+
+/* Image */
+.streaming-image img{
+  width:100%;
+  border-radius:20px;
+  display:block;
+}
+/* network section */
+
+.network{
+  padding:100px 0;
+}
+
+.network-container{
+  max-width:1300px;
+  margin:auto;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:80px;
+}
+
+/* Desktop */
+.network-image{ width:52%; }
+.network-content{ width:48%; }
+
+/* Tablet */
+@media(max-width:1280px){
+  .network-container{ max-width:1200px; }
+  .network-image{ width:55%; }
+  .network-content{ width:45%; }
+}
+
+/* Mobile */
+@media(max-width:768px){
+  .network-container{
+    flex-direction:column;
+    padding:0 20px;
+    gap:40px;
+  }
+
+  .network-image,
+  .network-content{
+    width:100%;
+  }
+}
+
+/* Image */
+.network-image img{
+  width:100%;
+  border-radius:22px;
+  display:block;
+}
+
+/* Tag */
+.tag{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  color:#2f76b6;
+  font-weight:600;
+}
+
+/* Text */
+.network-content h2{
+  font-size:42px;
+  line-height:1.2;
+  margin:15px 0;
+}
+
+.network-content .subtitle{
+  font-size:18px;
+  color:#555;
+  margin-bottom:25px;
+}
+
+/* Users */
+.users{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  margin-bottom:30px;
+}
+
+.users img{
+  width:40px;
+  height:40px;
+  border-radius:50%;
+}
+
+.users span{
+  font-size:14px;
+  color:#555;
+}
+
+/* Buttons */
+.buttons{
+  display:flex;
+  gap:20px;
+}
+
+/* Tablet & Mobile buttons stack */
+@media(max-width:1280px){
+  .buttons{
+    flex-direction:column;
+    width:fit-content;
+  }
+}
+
+/* Button styles */
+.primary,
+.secondary{
+  background:#2f76b6;
+  color:white;
+  border:none;
+  padding:14px 26px;
+  border-radius:10px;
+  cursor:pointer;
+}
+
+/* stats section */
+
+.stats{
+  background:linear-gradient(135deg, #2ea44f, #2fb35b);
+  padding:100px 0;
+}
+
+.stats-container{
+  max-width:1300px;
+  margin:auto;
+  display:grid;
+  grid-template-columns:repeat(3, 1fr);
+  gap:40px;
+}
+
+/* Tablet */
+@media(max-width:1280px){
+  .stats-container{
+    max-width:1200px;
+    gap:30px;
+  }
+}
+
+/* Mobile */
+@media(max-width:768px){
+  .stats-container{
+    grid-template-columns:1fr;
+    padding:0 20px;
+  }
+}
+
+/* Cards */
+.stat-card{
+  background:rgba(255,255,255,0.15);
+  border:1px solid rgba(255,255,255,0.3);
+  border-radius:20px;
+  padding:60px 30px;
+  text-align:center;
+  backdrop-filter:blur(6px);
+}
+
+/* Icon */
+.icon{
+  width:64px;
+  height:64px;
+  background:rgba(255,255,255,0.25);
+  border-radius:14px;
+  margin:0 auto 30px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+/* Text */
+.stat-card h2{
+  font-size:48px;
+  color:white;
+  margin-bottom:10px;
+}
+
+.stat-card p{
+  font-size:18px;
+  color:white;
+  line-height:1.4;
+}
+/* faq section */
+
+.faq{
+  padding:100px 0;
+}
+
+.faq-container{
+  max-width:1300px;
+  margin:auto;
+  display:grid;
+  grid-template-columns:45% 55%;
+  gap:80px;
+}
+
+/* Tablet */
+@media(max-width:1280px){
+  .faq-container{
+    max-width:1200px;
+    grid-template-columns:50% 50%;
+  }
+}
+
+/* Mobile */
+@media(max-width:768px){
+  .faq-container{
+    grid-template-columns:1fr;
+    padding:0 20px;
+    gap:40px;
+  }
+}
+
+/* LEFT */
+.faq-left h2{
+  font-size:42px;
+}
+
+.faq-left p{
+  font-size:18px;
+  margin:20px 0;
+  max-width:420px;
+}
+
+.contact{
+  background:#2f76b6;
+  color:white;
+  border:none;
+  padding:14px 28px;
+  border-radius:10px;
+}
+
+.faq-image{
+  width:100%;
+  margin-top:60px;
+}
+
+/* Mobile: center content */
+@media(max-width:768px){
+  .faq-left{
+    text-align:center;
+  }
+
+  .faq-left p{
+    margin-left:auto;
+    margin-right:auto;
+  }
+}
+
+/* RIGHT */
+.faq-item{
+  border-bottom:1px solid #ddd;
+  padding:18px 0;
+}
+
+.faq-title{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  font-size:18px;
+  cursor:pointer;
+}
+
+.faq-content{
+  display:none;
+  background:#f3faff;
+  padding:20px;
+  border-radius:12px;
+  margin-top:15px;
+}
+
+.faq-item.active .faq-content{
+  display:block;
+}
+
+.more{
+  margin-top:40px;
+  background:#2f76b6;
+  color:white;
+  border:none;
+  padding:14px 30px;
+  border-radius:10px;
+  float:right;
+}
+
+/* Mobile: button center */
+@media(max-width:768px){
+  .more{
+    float:none;
+    display:block;
+    margin:40px auto 0;
+  }
+}
+
+/* office locations section */
+
+.offices{
+  padding:80px 0;
+}
+
+.offices-bg{
+  max-width:1300px;
+  margin:auto;
+  background:#ecfdf5;
+  border:1px solid #b7e8cf;
+  border-radius:0 180px 0 0;
+  padding:80px 60px 100px;
+  position:relative;
+}
+
+.offices-bg::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  background-image:url("pattern.svg"); /* your subtle pattern */
+  opacity:.15;
+  pointer-events:none;
+}
+
+.offices h2{
+  text-align:center;
+  font-size:42px;
+  margin-bottom:15px;
+}
+
+.office-desc{
+  text-align:center;
+  max-width:800px;
+  margin:0 auto 60px;
+  color:#666;
+  font-size:18px;
+}
+
+/* GRID */
+.office-grid{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:30px;
+}
+
+/* Cards */
+.office-card{
+  background:#fff;
+  border-radius:16px;
+  padding:30px;
+  box-shadow:0 15px 40px rgba(0,0,0,0.08);
+  text-align:center;
+}
+
+.office-card h3{
+  color:#22a04e;
+  font-size:22px;
+  margin-bottom:15px;
+}
+
+.addr{
+  border-top:1px solid #e5f3ea;
+  border-bottom:1px solid #e5f3ea;
+  padding:20px 0;
+  margin-bottom:20px;
+  font-size:16px;
+  line-height:1.4;
+}
+
+.office-card a{
+  color:#22a04e;
+  font-weight:600;
+  text-decoration:none;
+}
+
+/* Tablet */
+@media(max-width:1200px){
+  .office-grid{
+    grid-template-columns:1fr 1fr;
+  }
+}
+
+/* Mobile */
+@media(max-width:700px){
+  .offices-bg{
+    padding:60px 25px;
+    border-radius:0 120px 0 0;
+  }
+
+  .office-grid{
+    grid-template-columns:1fr;
+  }
+}
+
+/* footer */
+.site-footer{
+  background: linear-gradient(90deg,#18a94a,#2a79b9);
+  color:#fff;
+  padding:60px 20px;
+}
+
+.footer-inner{
+  max-width:1200px;
+  margin:auto;
+  display:flex;
+  justify-content:space-between;
+  gap:60px;
+}
+
+.footer-left{
+  width:35%;
+}
+
+.footer-left h4{
+  margin-top:30px;
+}
+
+.phone{
+  font-size:20px;
+  margin:15px 0;
+}
+
+.press span{
+  border:2px solid white;
+  border-radius:50%;
+  padding:4px 8px;
+  margin:0 5px;
+}
+
+.socials{
+  display:flex;
+  gap:15px;
+  margin-top:25px;
+}
+
+.socials a{
+  width:40px;
+  height:40px;
+  background:white;
+  color:#18a94a;
+  border-radius:50%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+.footer-links{
+  display:flex;
+  gap:80px;
+}
+
+.footer-group{
+  width:220px;
+}
+
+.footer-title{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+.footer-title span{
+  display:none;
+}
+
+.footer-group ul{
+  list-style:none;
+  padding:0;
+  margin-top:15px;
+}
+
+.footer-group li{
+  margin:15px 0;
+  opacity:.9;
+}
+
+/* MOBILE */
+@media(max-width:900px){
+
+.footer-inner{
+  flex-direction:column;
+}
+
+.footer-left{
+  width:100%;
+}
+
+.footer-links{
+  flex-direction:column;
+}
+
+.footer-group ul{
+  display:none;
+}
+
+.footer-group.active ul{
+  display:block;
+}
+
+.footer-title span{
+  display:block;
+  font-size:28px;
+  cursor:pointer;
+}
+
+}
+
+
+
+
+
